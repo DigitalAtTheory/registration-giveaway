@@ -1,8 +1,21 @@
-import { CalendarIcon, TrashIcon } from "@heroicons/react/outline";
+import { CalendarIcon, TrashIcon, PlusIcon } from "@heroicons/react/outline";
 
-export default function Giveaways({ giveaways, handleDeleteGiveaway }) {
+export default function Giveaways({
+  giveaways,
+  handleDeleteGiveaway,
+  setOpen,
+}) {
   return (
     <div className="bg-white shadow-lg overflow-hidden sm:rounded-md my-24">
+      <div className="text-center mb-8">
+        <button
+          onClick={() => setOpen(true)}
+          className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600"
+        >
+          <PlusIcon className="ml-1 mr-2 h-5 w-5" />
+          New Giveaway
+        </button>
+      </div>
       <ul className="divide-y divide-gray-200">
         {giveaways.map((giveaway) => {
           return (

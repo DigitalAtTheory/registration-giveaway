@@ -178,6 +178,7 @@ export default function Home({ data, noPurchase }) {
           <Giveaways
             giveaways={displayedGiveaways}
             handleDeleteGiveaway={handleDeleteGiveaway}
+            setOpen={setOpen}
           />
         ) : (
           <NewGiveaway setOpen={setOpen} />
