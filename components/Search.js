@@ -1,0 +1,19 @@
+import { SearchIcon } from "@heroicons/react/outline";
+
+export default function Search({ query, handleSearch }) {
+  return (
+    <div className="mt-1 rounded-md shadow-sm relative">
+      <input
+        type="text"
+        name="searchBar"
+        className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-4 pr-10 sm:text-sm lg:text-lg border-gray-300 rounded-md"
+        placeholder="Search Receipt Numbers..."
+        value={query}
+        onChange={handleSearch}
+      />
+      <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+        <SearchIcon className="h-7 w-7 text-gray-400" />
+      </div>
+    </div>
+  );
+}
