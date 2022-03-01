@@ -154,6 +154,9 @@ export default function Home({ data, noPurchase }) {
 
   return (
     <div>
+      <h1 className="text-center text-2xl md:text-4xl font-bold mb-12">
+        Daytona Bike Week Giveaway Entry
+      </h1>
       <Search query={searchQuery} handleSearch={handleSearch} />
       <div className="max-w-sm mx-auto mt-12">
         {giveaways && (
@@ -161,6 +164,14 @@ export default function Home({ data, noPurchase }) {
             Total # of Giveaways:{" "}
             <span className="bg-indigo-100 text-indigo-600 font-bold p-2 rounded ml-2 text-xl">
               {giveaways.length}
+            </span>
+          </h2>
+        )}
+        {giveaways && (
+          <h2 className="uppercase text-gray-600 text-sm mt-8 flex items-center justify-between">
+            Total # of Purchase Claimed:{" "}
+            <span className="bg-green-100 text-green-600 font-bold p-2 rounded ml-2 text-xl">
+              {giveaways.length - noPurchaseArr.length}
             </span>
           </h2>
         )}
