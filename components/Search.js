@@ -6,7 +6,7 @@ export default function Search({ query, handleSearch }) {
       <input
         type="text"
         name="searchBar"
-        className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-4 pr-10 sm:text-sm lg:text-lg border-gray-300 rounded-md"
+        className="focus:ring-gold-500 focus:border-gold-500 block text-gray-900 w-full py-4 pr-10 sm:text-sm lg:text-lg border-gray-300 rounded-md"
         placeholder="Search Receipt Numbers..."
         value={query}
         onChange={handleSearch}

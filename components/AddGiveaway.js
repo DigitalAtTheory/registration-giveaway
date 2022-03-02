@@ -68,7 +68,7 @@ export default function AddGiveaway({
                         <input
                           type="text"
                           name="receiptNumber"
-                          className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                          className="shadow-sm focus:ring-gold-500 focus:border-gold-500 text-gray-900 block w-full sm:text-sm border-gray-300 rounded-md"
                           placeholder="Ex. R1234567890"
                           value={receiptNumber}
                           onChange={(e) => setReceiptNumber(e.target.value)}
@@ -89,7 +89,7 @@ export default function AddGiveaway({
                       <div className="ml-3 flex items-center h-5">
                         <input
                           type="checkbox"
-                          className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                          className="focus:ring-gold-500 h-4 w-4 text-gold-600 border-gray-300 rounded"
                           checked={noPurchaseNeeded}
                           onChange={(e) =>
                             setNoPurchaseNeeded(!noPurchaseNeeded)
@@ -103,7 +103,7 @@ export default function AddGiveaway({
               <div className="sm:mb-5">
                 <button
                   type="button"
-                  className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+                  className="inline-flex justify-center w-full rounded-md text-gray-900 border border-transparent shadow-sm px-4 py-2 bg-gold-500 text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-600 sm:text-sm"
                   onClick={addNewGiveaway}
                 >
                   Add New Giveaway

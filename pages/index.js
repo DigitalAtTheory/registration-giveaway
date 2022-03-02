@@ -160,15 +160,15 @@ export default function Home({ data, noPurchase }) {
       <Search query={searchQuery} handleSearch={handleSearch} />
       <div className="max-w-sm mx-auto mt-12">
         {giveaways && (
-          <h2 className="uppercase text-gray-600 text-lg flex items-center justify-between">
+          <h2 className="uppercase text-gray-100 text-lg flex items-center justify-between">
             Total # of Giveaways:{" "}
-            <span className="bg-indigo-100 text-indigo-600 font-bold p-2 rounded ml-2 text-xl">
+            <span className="bg-gold-100 text-gold-700 font-bold p-2 rounded ml-2 text-xl">
               {giveaways.length}
             </span>
           </h2>
         )}
         {giveaways && (
-          <h2 className="uppercase text-gray-600 text-sm mt-8 flex items-center justify-between">
+          <h2 className="uppercase text-gray-100 text-sm mt-8 flex items-center justify-between">
             Total # of Purchase Claimed:{" "}
             <span className="bg-green-100 text-green-600 font-bold p-2 rounded ml-2 text-xl">
               {giveaways.length - noPurchaseArr.length}
@@ -176,7 +176,7 @@ export default function Home({ data, noPurchase }) {
           </h2>
         )}
         {noPurchaseArr && (
-          <h2 className="uppercase text-gray-600 text-sm mt-8 flex items-center justify-between">
+          <h2 className="uppercase text-gray-100 text-sm mt-8 flex items-center justify-between">
             Total # of No Purchase Claimed:{" "}
             <span className="bg-rose-100 text-rose-600 font-bold p-2 rounded ml-2 text-lg">
               {noPurchaseArr.length}

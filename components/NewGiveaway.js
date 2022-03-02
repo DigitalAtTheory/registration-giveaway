@@ -13,7 +13,7 @@ export default function NewGiveaway({ setOpen }) {
       <div className="mt-6">
         <button
           onClick={() => setOpen(true)}
-          className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600"
+          className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-gray-900 bg-gold-500"
         >
           <PlusIcon className="ml-1 mr-2 h-5 w-5" />
           New Giveaway
