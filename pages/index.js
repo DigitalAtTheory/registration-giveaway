@@ -14,7 +14,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase/clientApp";
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const colRef = collection(db, "giveaways");
 
   let data = [];
