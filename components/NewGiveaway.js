@@ -6,7 +6,7 @@ export default function NewGiveaway({ setOpen }) {
       <div>
         <DocumentAddIcon className="mx-auto h-12 w-12 text-gray-400" />
       </div>
-      <h3 className="mt-2 text-sm font-medium text-gray-900">No Giveaways</h3>
+      <h3 className="mt-2 text-sm font-medium text-gray-50">No Giveaways</h3>
       <p className="mt-1 text-sm text-gray-500">
         Register a new giveway by clicking the button below
       </p>
